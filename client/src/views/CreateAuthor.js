@@ -24,7 +24,7 @@ const Create = (props) => {
 
     return (
         <div>
-            <h1 className="text-center mt-3">Favorite Authors</h1>
+            <h2 className="text-center mt-3">Favorite Authors</h2>
             <Link className="btn btn-outline-primary col-2 offset-5" to="/">
                 Home
             </Link>
@@ -32,7 +32,7 @@ const Create = (props) => {
                 name={name}
                 setName={setName}
                 onSubmitAction={createAuthor}
-                action="Add"
+                action="Add a new"
                 errors={errors}
             />
         </div>

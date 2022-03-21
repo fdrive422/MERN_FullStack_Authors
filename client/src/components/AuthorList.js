@@ -8,7 +8,7 @@ const AuthorList = (props) => {
     return (
         <div>
             <Container className="border border-dark rounded mt-3">
-                <table className=" table table-striped table-hover mx-1 my-2" >
+                <table className="table table-striped table-hover my-2" >
                     <thead>
                         <tr>
                             <th>Authors:</th>
@@ -17,12 +17,12 @@ const AuthorList = (props) => {
                     </thead>
                     <tbody>
                         {authors.map((author, index) => (
-                            < tr key={index}>
+                            <tr key={index}>
                                 <td>{author.name}</td>
                                 <td>
-                                    <Link className=" btn btn-outline-primary" to={`/author/edit/${author._id}`} > Edit</Link>
+                                    <Link className="btn btn-outline-primary" to={`/author/edit/${author._id}`} > Edit</Link>
                                     &nbsp;
-                                    <button className=" btn btn-outline-primary" onClick={() => deleteAuthor(author._id)} > Delete</button>
+                                    <button className="btn btn-outline-primary" onClick={() => deleteAuthor(author._id)} > Delete</button>
                                 </td>
                             </tr>
                         ))}

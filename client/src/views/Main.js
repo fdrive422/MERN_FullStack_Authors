@@ -36,7 +36,7 @@ const Main = (props) => {
 
     return (
         <div className="col">
-            <h1 className="text-center mt-3">Favorite Authors</h1>
+            <h2 className="text-center mt-3">Favorite Authors</h2>
             <Link className="btn btn-outline-primary col-2 offset-5" to="/author/create">
                 Add Author
             </Link>

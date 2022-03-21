@@ -40,7 +40,7 @@ const Edit = (props) => {
 
     return (
         <div className="bg-light">
-            <h1 className="text-center mt-3">Favorite Authors</h1>
+            <h2 className="text-center mt-3">Favorite Authors</h2>
             <Link className="btn btn-outline-primary col-2 offset-5" to="/">
                 Home
             </Link>
@@ -48,7 +48,7 @@ const Edit = (props) => {
                 name={name}
                 setName={setName}
                 onSubmitAction={updateAuthor}
-                action="Edit"
+                action="Edit this"
                 errors={errors}
             />
         </div>

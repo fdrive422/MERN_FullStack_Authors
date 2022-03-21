@@ -10,8 +10,8 @@ const AuthorForm = (props) => {
     };
 
     return (
-        <div className="border rounded p-2 m-5 bg-light">
-            <h2 className="text-center">{action} an author</h2>
+        <div className="border rounded p-2 my-4 mx-5 bg-light">
+            <h4 className="text-center">{action} author</h4>
             <form onSubmit={submitHandler}>
                 <div className="mb-3">
                     <label htmlFor="title" className="form-label">
